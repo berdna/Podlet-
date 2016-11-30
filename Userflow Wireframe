@@ -1,0 +1,20 @@
+# Pages
+            - Welcome Page {welcome#index}
+            - Sign In {session#new}
+            - Sign Up {registration#new}
+            - Podcast {podcast#index}
+            - Podcast Single {podcast#show}
+            - Podcast Edit {podcast#edit}
+            - Episode Page {episode#show}
+            - Episode New {episode#new}
+            - Episode Edit{episode#edit}
+            - Dashboard {podcast#dashboard}
+            
+# Welcome Page
+    - User Lands on Site (anchors to home page)
+    - Full Image Background
+    - Headline and Navigation
+    - Transforms(connects/anchors) to either:
+        - Sign in Page
+        - Sign Up Page
+        - Discover Page

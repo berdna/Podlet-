@@ -1,0 +1,63 @@
+# Planning
+    - Answer Questions
+    - User Stories
+    - Model Our Data
+    - Think Through the pages we need in our app
+    
+# Questions
+    1. Whare are we building?
+    2. Who are we building it for?
+    3. What features do we want to have?
+    
+    1. Podcasting Netowrk. A place for podcast creators to add episodes of their podcast for their audiences to listen to.
+    2. Podcast Creators # Podcast's Audience
+    3. What Features
+        - Users ( aka Podcast), sign up, sign in / out
+        - Authentication so that user can only access their own content
+        - CRUD {Create, Read, Update, Destroy} for podcast episodes
+        - Image Uploading
+        - MP3 Uploading
+        - Store Assets on Amazon S3
+        - Launch application live on Heroku
+    # User Stories
+    As a user, I want to -BLANK- because of -BLANK-
+    
+        - As a user, I want to be able to explore / discover new podcast so that I can find new stuff to listen to.
+        - As a user, I want to be able to sugn up & create a podcast, so that my audience can listen in my podcast episodes.
+        -As an authorized user, I want to be able to sign in & out so that I can access my account.
+        - As an authorized user, I want to be able to edit or delete my podcast episodes so that I can manage my podcast
+        - As an authorized user, I want to be able to add images(thumbnails) to my podcast episodes, so that each episode can be recognizable.
+        -As an authorzied user, I want to be able to upload MP3s.
+        
+        # Data
+            --Podcast--
+            has_many : episodes
+                - Email
+                - Password
+                - Title
+                - Description
+                -Thumbnail
+                - Episode
+                - iTunes Link
+                - Stitcher Link
+                - Podboy Link
+            --Episode--
+            belongs_to : podcast
+                - Title 
+                - Description
+                - Podcast ID
+                - Thumbnail
+                - MP3
+                
+        # Pages
+            - Welcome Page {welcome#index}
+            - Sign In {session#new}
+            - Sign Up {registration#new}
+            - Podcast {podcast#index}
+            - Podcast Single {podcast#show}
+            - Podcast Edit {podcast#edit}
+            - Episode Page {episode#show}
+            - Episode New {episode#new}
+            - Episode Edit{episode#edit}
+            - Dashboard {podcast#dashboard}
+        
